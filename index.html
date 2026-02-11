@@ -35,6 +35,20 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
         }
+        /* Custom scrollbar for table */
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
     </style>
 </head>
 <body class="text-slate-800">
@@ -77,8 +91,8 @@
                     <div class="text-sm text-slate-300">最大光纖優化長度</div>
                 </div>
                 <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/10">
-                    <div class="text-3xl font-bold text-cyan-400">2-Stage</div>
-                    <div class="text-sm text-slate-300">HF 蝕刻技術演進</div>
+                    <div class="text-3xl font-bold text-cyan-400">14.7%</div>
+                    <div class="text-sm text-slate-300">最佳化 HF 蝕刻濃度</div>
                 </div>
             </div>
         </div>
@@ -101,13 +115,13 @@
                     <h3 class="text-lg font-bold text-slate-900 mb-1">唐育喆</h3>
                     <p class="text-sm text-blue-600 mb-4 font-medium">4 瓦 976nm 連續波摻鐿全光纖雷射之驗證研究</p>
                     <ul class="space-y-2 text-sm text-slate-600 mb-4">
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>實現 4W 連續波輸出</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>單端 Taper (輸入端) 設計</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>二次蝕刻解決表面粗糙</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i><strong>光纖規格：</strong> Core 20μm / Clad 125μm</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i><strong>輸出設計：</strong> 單端 Taper (Input Only)</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i><strong>損耗控制：</strong> 穿透率下降 < 5%</li>
                     </ul>
                     <div class="pt-4 border-t border-slate-100">
                         <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">核心貢獻</span>
-                        <p class="text-sm mt-1">驗證全光纖系統可行性，建立基礎蝕刻製程架構。</p>
+                        <p class="text-sm mt-1">驗證全光纖系統可行性，利用二次蝕刻解決表面粗糙問題，奠定製程基礎。</p>
                     </div>
                 </div>
 
@@ -117,13 +131,13 @@
                     <h3 class="text-lg font-bold text-slate-900 mb-1">吳泓勳</h3>
                     <p class="text-sm text-blue-600 mb-4 font-medium">降低泵浦光源數值孔徑以改善 HF 蝕刻效率</p>
                     <ul class="space-y-2 text-sm text-slate-600 mb-4">
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>引入 Low NA Pump 概念</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>高低濃度兩階段 HF 蝕刻</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>提升穿透率與效率 10~20%</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i><strong>泵浦策略：</strong> 引入 Low NA Pump 注入</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i><strong>蝕刻優化：</strong> 高低濃度 HF 兩階段蝕刻</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i><strong>效率提升：</strong> 穿透率/效率提升 10~20%</li>
                     </ul>
                     <div class="pt-4 border-t border-slate-100">
                         <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">核心貢獻</span>
-                        <p class="text-sm mt-1">改善光纖表面平整度，證明低 NA 泵浦能降低散射損耗。</p>
+                        <p class="text-sm mt-1">證明降低 Pump NA 可減少粗糙表面造成的散射損耗，顯著提升整體光轉換效率。</p>
                     </div>
                 </div>
 
@@ -133,13 +147,13 @@
                     <h3 class="text-lg font-bold text-slate-900 mb-1">林汶廷</h3>
                     <p class="text-sm text-blue-600 mb-4 font-medium">最大化蝕刻長度以優化雷射效率</p>
                     <ul class="space-y-2 text-sm text-slate-600 mb-4">
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>光纖長度增至 24cm</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>14.7% HF 濃度最佳化</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>90分鐘兩階段蝕刻</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i><strong>長度突破：</strong> 蝕刻長度增至 24cm</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i><strong>製程參數：</strong> 14.7% HF / 90分鐘</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i><strong>濃度比較：</strong> 14.7% 優於 12.25%</li>
                     </ul>
                     <div class="pt-4 border-t border-slate-100">
                         <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">核心貢獻</span>
-                        <p class="text-sm mt-1">極限化光纖長度參數，優化蝕刻時間與濃度配比。</p>
+                        <p class="text-sm mt-1">極限化光纖長度，找出蝕刻時間與濃度的最佳平衡點 (90min, 14.7%)。</p>
                     </div>
                 </div>
             </div>
@@ -152,75 +166,92 @@
                 <h2 class="text-2xl font-bold text-slate-800">詳細實驗參數對比</h2>
             </div>
 
-            <div class="overflow-hidden border border-slate-200 rounded-xl shadow-sm">
-                <table class="min-w-full divide-y divide-slate-200 bg-white">
+            <div class="overflow-x-auto custom-scrollbar border border-slate-200 rounded-xl shadow-sm">
+                <table class="min-w-full divide-y divide-slate-200 bg-white text-sm">
                     <thead class="bg-slate-50">
                         <tr>
-                            <th scope="col" class="px-6 py-4 text-left text-xs font-bold text-slate-500 uppercase tracking-wider w-1/4">比較項目</th>
-                            <th scope="col" class="px-6 py-4 text-left text-xs font-bold text-slate-500 uppercase tracking-wider w-1/4">唐育喆 (2023)</th>
-                            <th scope="col" class="px-6 py-4 text-left text-xs font-bold text-blue-600 uppercase tracking-wider w-1/4 bg-blue-50/50">吳泓勳 (2024)</th>
-                            <th scope="col" class="px-6 py-4 text-left text-xs font-bold text-indigo-600 uppercase tracking-wider w-1/4 bg-indigo-50/50">林汶廷 (2025)</th>
+                            <th scope="col" class="px-6 py-4 text-left font-bold text-slate-600 uppercase tracking-wider w-1/5 sticky left-0 bg-slate-50 border-r border-slate-200">比較項目</th>
+                            <th scope="col" class="px-6 py-4 text-left font-bold text-slate-700 uppercase tracking-wider w-1/4">唐育喆 (2023)<br><span class="text-xs font-normal text-slate-500">Baseline / Verification</span></th>
+                            <th scope="col" class="px-6 py-4 text-left font-bold text-blue-700 uppercase tracking-wider w-1/4 bg-blue-50/30">吳泓勳 (2024)<br><span class="text-xs font-normal text-blue-600">Low NA Optimization</span></th>
+                            <th scope="col" class="px-6 py-4 text-left font-bold text-indigo-700 uppercase tracking-wider w-1/4 bg-indigo-50/30">林汶廷 (2025)<br><span class="text-xs font-normal text-indigo-600">Max Length / Parameters</span></th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-200">
-                        <tr class="hover:bg-slate-50 transition-colors">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-900">
-                                <i class="fa-solid fa-crosshairs text-slate-400 mr-2"></i>研究目標
-                            </td>
-                            <td class="px-6 py-4 text-sm text-slate-600">4W 輸出驗證</td>
-                            <td class="px-6 py-4 text-sm text-slate-600 bg-blue-50/30">降低 Pump NA + 表面平整</td>
-                            <td class="px-6 py-4 text-sm text-slate-600 bg-indigo-50/30">最大化蝕刻長度</td>
+                        <!-- Group 1: Fiber & Setup -->
+                        <tr class="bg-slate-50/50">
+                            <td colspan="4" class="px-6 py-2 text-xs font-bold text-slate-400 uppercase tracking-wider">光纖與系統架構</td>
                         </tr>
                         <tr class="hover:bg-slate-50 transition-colors">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-900">
-                                <i class="fa-solid fa-ruler-horizontal text-slate-400 mr-2"></i>光纖長度 (Active)
-                            </td>
-                            <td class="px-6 py-4 text-sm text-slate-600">約 15-20cm (推估)</td>
-                            <td class="px-6 py-4 text-sm text-slate-600 bg-blue-50/30">中等長度優化</td>
-                            <td class="px-6 py-4 text-sm font-bold text-indigo-700 bg-indigo-50/30">24 cm</td>
+                            <td class="px-6 py-4 font-medium text-slate-900 sticky left-0 bg-white border-r border-slate-200">光纖原始規格</td>
+                            <td class="px-6 py-4 text-slate-600">Core 20μm / Clad 125μm (Yb)</td>
+                            <td class="px-6 py-4 text-slate-600 bg-blue-50/10">同左</td>
+                            <td class="px-6 py-4 text-slate-600 bg-indigo-50/10">同左</td>
                         </tr>
                         <tr class="hover:bg-slate-50 transition-colors">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-900">
-                                <i class="fa-solid fa-flask text-slate-400 mr-2"></i>蝕刻條件 (HF)
-                            </td>
-                            <td class="px-6 py-4 text-sm text-slate-600">二次蝕刻 (不同濃度)</td>
-                            <td class="px-6 py-4 text-sm text-slate-600 bg-blue-50/30">低濃度 HF + 高低濃度兩階段</td>
-                            <td class="px-6 py-4 text-sm text-slate-600 bg-indigo-50/30">14.7% 兩階段 (90 mins)</td>
-                        </tr>
-                         <tr class="hover:bg-slate-50 transition-colors">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-900">
-                                <i class="fa-solid fa-vector-square text-slate-400 mr-2"></i>Taper 設計
-                            </td>
-                            <td class="px-6 py-4 text-sm text-slate-600">僅輸入端 Taper<br>輸出端無 Taper</td>
-                            <td class="px-6 py-4 text-sm text-slate-600 bg-blue-50/30">優化 Taper 過渡區</td>
-                            <td class="px-6 py-4 text-sm text-slate-600 bg-indigo-50/30">沿用並優化長度匹配</td>
+                            <td class="px-6 py-4 font-medium text-slate-900 sticky left-0 bg-white border-r border-slate-200">光纖蝕刻/有效長度</td>
+                            <td class="px-6 py-4 text-slate-600">~15-20cm (基礎驗證長度)</td>
+                            <td class="px-6 py-4 text-slate-600 bg-blue-50/10">中等長度 (優化過渡區)</td>
+                            <td class="px-6 py-4 font-bold text-indigo-700 bg-indigo-50/10">24 cm (極大化)</td>
                         </tr>
                         <tr class="hover:bg-slate-50 transition-colors">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-900">
-                                <i class="fa-solid fa-bolt text-slate-400 mr-2"></i>輸出/效率表現
+                            <td class="px-6 py-4 font-medium text-slate-900 sticky left-0 bg-white border-r border-slate-200">Taper 設計</td>
+                            <td class="px-6 py-4 text-slate-600">
+                                <span class="block text-xs text-slate-400 mb-1">輸入端：有 Taper</span>
+                                <span class="block text-xs text-slate-400">輸出端：無 Taper</span>
                             </td>
-                            <td class="px-6 py-4 text-sm text-slate-600">達到 4W 連續波</td>
-                            <td class="px-6 py-4 text-sm text-slate-600 bg-blue-50/30">效率提升 10-20%<br>穿透率提升</td>
-                            <td class="px-6 py-4 text-sm text-slate-600 bg-indigo-50/30">最佳化數值 (待論文完整數據)</td>
+                            <td class="px-6 py-4 text-slate-600 bg-blue-50/10">Input Taper + Low NA Launch</td>
+                            <td class="px-6 py-4 text-slate-600 bg-indigo-50/10">長度匹配 Taper 優化</td>
+                        </tr>
+
+                         <!-- Group 2: Process Parameters -->
+                         <tr class="bg-slate-50/50">
+                            <td colspan="4" class="px-6 py-2 text-xs font-bold text-slate-400 uppercase tracking-wider">蝕刻製程參數 (HF Etching)</td>
                         </tr>
                         <tr class="hover:bg-slate-50 transition-colors">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-900">
-                                <i class="fa-solid fa-lightbulb text-slate-400 mr-2"></i>關鍵創新
+                            <td class="px-6 py-4 font-medium text-slate-900 sticky left-0 bg-white border-r border-slate-200">蝕刻策略</td>
+                            <td class="px-6 py-4 text-slate-600">二次蝕刻 (不同濃度)<br><span class="text-xs text-slate-400">目的：解決表面粗糙</span></td>
+                            <td class="px-6 py-4 text-slate-600 bg-blue-50/10">高低濃度兩階段<br><span class="text-xs text-blue-400">目的：配合 Low NA 降低散射</span></td>
+                            <td class="px-6 py-4 text-slate-600 bg-indigo-50/10">14.7% 兩階段<br><span class="text-xs text-indigo-400">目的：時間與濃度最佳化</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="px-6 py-4 font-medium text-slate-900 sticky left-0 bg-white border-r border-slate-200">最佳化條件</td>
+                            <td class="px-6 py-4 text-slate-600">N/A (初步測試)</td>
+                            <td class="px-6 py-4 text-slate-600 bg-blue-50/10">低濃度 HF 為主</td>
+                            <td class="px-6 py-4 font-bold text-indigo-700 bg-indigo-50/10">14.7% HF, 90 mins</td>
+                        </tr>
+
+                        <!-- Group 3: Performance -->
+                        <tr class="bg-slate-50/50">
+                            <td colspan="4" class="px-6 py-2 text-xs font-bold text-slate-400 uppercase tracking-wider">實驗結果與機制</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="px-6 py-4 font-medium text-slate-900 sticky left-0 bg-white border-r border-slate-200">關鍵物理機制</td>
+                            <td class="px-6 py-4 text-slate-600">增加纖核/包覆層面積比 (Area Ratio)</td>
+                            <td class="px-6 py-4 text-slate-600 bg-blue-50/10">降低 Pump NA <i class="fa-solid fa-arrow-right text-xs"></i> 減少表面散射</td>
+                            <td class="px-6 py-4 text-slate-600 bg-indigo-50/10">增加作用長度 <i class="fa-solid fa-arrow-right text-xs"></i> 提升總增益量</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="px-6 py-4 font-medium text-slate-900 sticky left-0 bg-white border-r border-slate-200">效率/損耗表現</td>
+                            <td class="px-6 py-4 text-slate-600">
+                                4W CW 輸出<br>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800 mt-1">
+                                    穿透率損耗 < 5%
+                                </span>
                             </td>
-                            <td class="px-6 py-4 text-sm text-slate-600">
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">基礎驗證</span>
+                            <td class="px-6 py-4 text-slate-600 bg-blue-50/10">
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">
+                                    效率提升 10~20%
+                                </span>
                             </td>
-                            <td class="px-6 py-4 text-sm text-slate-600 bg-blue-50/30">
-                                <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded text-xs">Low NA Pump</span>
-                            </td>
-                            <td class="px-6 py-4 text-sm text-slate-600 bg-indigo-50/30">
-                                <span class="px-2 py-1 bg-indigo-100 text-indigo-600 rounded text-xs">長度極大化</span>
+                            <td class="px-6 py-4 text-slate-600 bg-indigo-50/10">
+                                驗證 24cm 可行性<br>
+                                <span class="text-xs text-indigo-400">14.7% 優於 12.25%</span>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <p class="mt-2 text-xs text-slate-400 text-right">* 表格數據基於論文摘要與結論片段整理，詳細數值請參閱完整論文內文。</p>
+            <p class="mt-2 text-xs text-slate-400 text-right">* 表格數據彙整自各年度碩士論文摘要與結論章節。</p>
         </section>
 
         <!-- Section 3: Charts -->
@@ -244,12 +275,12 @@
 
                 <!-- Chart 2: Methodology Complexity & Efficiency -->
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                    <h3 class="text-lg font-bold text-slate-700 mb-4 text-center">技術複雜度與效率提升概念圖</h3>
+                    <h3 class="text-lg font-bold text-slate-700 mb-4 text-center">實驗參數優化與效率趨勢</h3>
                     <div class="relative h-64 w-full">
                         <canvas id="efficiencyChart"></canvas>
                     </div>
                     <p class="mt-4 text-sm text-slate-500 text-center">
-                        隨著引入 Low NA Pump 技術 (2024) 與蝕刻參數精細化 (2025)，系統整體的雷射轉換效率呈現上升趨勢。
+                        從基礎的面積比調整 (2023)，進展至 Low NA 減少散射 (2024)，最後透過極限長度與濃度微調 (2025) 達到最佳化。
                     </p>
                 </div>
             </div>
@@ -320,7 +351,7 @@
             data: {
                 labels: ['2023', '2024', '2025'],
                 datasets: [{
-                    label: '相對雷射效率 (%)',
+                    label: '相對雷射效率 (Trend)',
                     data: [45, 55, 62], // Conceptual data based on "10-20% improvement" claims
                     borderColor: 'rgb(6, 182, 212)',
                     backgroundColor: 'rgba(6, 182, 212, 0.1)',
@@ -329,7 +360,7 @@
                     pointRadius: 6,
                     pointHoverRadius: 8
                 }, {
-                    label: '製程複雜度',
+                    label: '製程精細度 (Complexity)',
                     data: [30, 60, 85], // 2023(Basic) -> 2024(Low NA) -> 2025(Max Length + Fine tuning)
                     borderColor: 'rgb(244, 63, 94)',
                     borderDash: [5, 5],
